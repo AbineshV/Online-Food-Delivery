@@ -1,0 +1,207 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*CSS Variables*/
+:root {
+    --navbar-height: 59px;
+}
+
+/*navbar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    ;
+}
+
+/* Navigation Bar: Logo and Images */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 40px;
+    width: 40px;
+    margin: 1px 5px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar {
+    position: absolute;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: #000;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 22px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Home */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 409px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url("pexels-adonyi-gábor-1414651.jpg") no-repeat center center/cover;
+    height: 413px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Services */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid rgb(66, 64, 64);
+    background-color: rgb(236, 231, 231);
+    margin: 3px 6px;
+    padding: 34px;
+    border-radius: 24px;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+/*Clients-Section*/
+
+#clients-section {
+    height: 344px;
+}
+
+#clients-section:before {
+    content: "";
+    position: absolute;
+    background: url("pexels-lukas-952476.jpg");
+    height: 301px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#client-items {
+    padding: 34px;
+}
+
+#clients img {
+    height: 140px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("world.jpg") no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Utility Classes*/
+
+#home h1 {
+    color: #000;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#home p {
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-primary {
+    font-size: 3.2rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 2.2rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid #000;
+    background-color: rgba(255, 255, 255, 0.671);
+    color: #000;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
